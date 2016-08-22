@@ -81,7 +81,7 @@ def rotate_array(array, n):
     return array
 
 
-def lcm(*values):
+def lcm(values):
 	values = set([abs(int(v)) for v in values])
 	if values and 0 not in values:
 		n = n0 = max(values)
@@ -91,7 +91,6 @@ def lcm(*values):
 		return n
 	return 0
 
-print lcm(2,4)
 
 
 
